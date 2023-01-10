@@ -1,0 +1,16 @@
+<?php
+
+class Card {
+
+  // Attributs
+  
+
+
+}
+
+
+
+
+
+
+?>

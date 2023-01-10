@@ -4,11 +4,12 @@ require_once 'classes/Player.php';
 if (isset($_POST['login'])) {
   $pseudo = htmlspecialchars($_POST['pseudo']);
   $password = htmlspecialchars($_POST['password']);
-  var_dump($_SESSION);
+  
 }
-
 $player = new Player();
 $player->login($pseudo, $password);
+// Affichage Message d'erreur
+echo $player->getError();
 
 ?>
 <!DOCTYPE html>

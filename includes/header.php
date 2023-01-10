@@ -29,9 +29,12 @@ if (isset($_POST['deconnexion'])) {
           <li><a href="index.php">Accueil</a></li>
           <li><a href="inscription.php">Inscription</a></li>
           <li><a href="connexion.php">Connexion</a></li>
-          <li><a href="game.php">Jouer</a></li>
+
         <?php else : ?>
-          <form method="post" action=""><input type="submit" name="deconnexion" value="Se déconnecter"></form>
+          <form method="post" action="">
+            <input type="submit" name="deconnexion" value="Se déconnecter">
+            <button><a href="game.php">Jouer</a></button>
+          </form>
         <?php endif; ?>
       </ul>
     </nav>

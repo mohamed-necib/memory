@@ -10,7 +10,8 @@ if (isset($_POST['register'])) {
 
 $player = new Player();
 $player->register($pseudo, $password, $password_confirm, $score);
-
+// Affichage Message d'erreur
+echo $player->getError();
 
 ?>
 
@@ -26,7 +27,7 @@ $player->register($pseudo, $password, $password_confirm, $score);
 </head>
 
 <body>
-  <?php require_once "includes/header.php"?>
+  <?php require_once "includes/header.php" ?>
   <h1>Inscription</h1>
   <form method="POST" action="">
     <input type="text" name="pseudo" placeholder="Pseudo" />
